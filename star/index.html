@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="goods">
+        <div class="goods__item">
+            <img class="goods__image" src="./assets/comp1.jpg" alt="the best laptop">
+            <p>Цена <span class="goods__price">200000</span> Руб</p>
+            <input class="goods__quantity" type="number">
+        </div>
+        <div class="goods__item">
+            <img class="goods__image" src="./assets/comp2.jpg" alt="so-so laptop">
+            <p>Цена <span class="goods__price">100000</span> Руб</p>
+            <input class="goods__quantity" type="number">
+        </div>
+        <div class="goods__item">
+            <img class="goods__image" src="./assets/comp3.jpg" alt="the worse laptop">
+            <p>Цена <span class="goods__price">30000</span> Руб</p>
+            <input class="goods__quantity" type="number"></input>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="button" onclick="calculateTotalPrice()">Узнать стоимость</button>
+    </div>
+    <p class="total"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>

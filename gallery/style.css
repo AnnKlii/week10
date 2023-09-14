@@ -1,0 +1,36 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_image {
+    width: 30%;
+}
+
+.gallery_buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus {
+    border: 5px solid gray;
+}
