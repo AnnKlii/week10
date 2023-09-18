@@ -12,10 +12,9 @@ let a = 5;
 let b = 3;
 
 function sum(a, b) {
-	let sum = a + b;
-	console.log(sum);
+	return a + b;
 }
-sum(a, b);
+console.log(sum(a, b));
 
 
 //Задание 3
@@ -24,10 +23,9 @@ let x = 4;
 let y = 2;
 
 function multiply(x, y) {
-	let multiply = x * y;
-	console.log(multiply);
+	return x * y;
 }
-multiply(x, y);
+console.log(multiply(x, y));
 
 
 //Задание 4
@@ -46,8 +44,7 @@ let width = 6;
 let height = 4;
 
 function calculateArea(width, height) {
-	let calculateArea = width * height;
-	return calculateArea;
+	return width * height;
 }
 
 console.log(calculateArea(width, height));
@@ -101,11 +98,12 @@ sayHello("Вася");
 //Задание 10
 // Создайте функцию calculateDifference с помощью Function Expression и правильно используйте её, чтобы вычесть два числа и вывести результат в консоль.
 // Ваш код
-
-/* const result = calculateDifference(5, 3){
-return 5-3;
-}; */
-// console.log(result); //Выведет 2
+let s = 5;
+let t = 3;
+const result = function calculateDifference(s, t) {
+	return s - t;
+};
+console.log(result); //Выведет 2
 
 //Задание 11
 // Напишите функцию calculateProduct с помощью Function Expression, которая будет принимать два параметра. Функция должна перемножить значения и вывести результат в консоль.
@@ -143,14 +141,14 @@ findAnimal();
 //Задание 15
 // Допишите программу, которая вычисляет сколько лет прошло с летней олимпиады в Токио, Япония. Подсказка: 1. нужно создать переменную с текущим годом. 2. при вызове функции в круглые скобки нужно передать два параметра: текущий год и год летней олимпиады в Токио.
 const lastOlympicsYear = 2021;
-const NowYear = 2023;
+const nowYear = 2023;
 
 function calculateYearsSinceLastOlympics(a, b) {
 	return a - b;
 }
 
 console.log(
-	'С момента летней олимпиады в Токио прошло ' + calculateYearsSinceLastOlympics(NowYear, lastOlympicsYear) + ' года',
+	'С момента летней олимпиады в Токио прошло ' + calculateYearsSinceLastOlympics(nowYear, lastOlympicsYear) + ' года',
 );
 
 //Задание 16
